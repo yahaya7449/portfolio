@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yahaya - Student Portfolio</title>
+    <meta name="description" content="Academic portfolio of Yahaya: 
+    including Projects and academic planner." />
+
+    <!-- Google fonts: display, body and monospace type -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter
+    :wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html">
+            <span class="brand__mark" aria-hidden="true"></span>
+            <span class="brand_text">YAHAYA<span class="brand_dot">.</span></span> 
+        </a>
+
+        <!-- Hamburger button - only visible on mobile -->
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle 
+        navigation">
+        <span><span><span></span></span></span>
+        </button>
+
+        <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="planner.html">Planner</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!--  -->
+        <section class="hero wrap" aria-labelledby="hero-title">
+            <div class="hero__frame">
+                <div class="hero__grid">
+                    <div>
+                        <p class="eyebrow"> Ground Station . Online</p>
+
+                        <h1 class="hero__name" id="hero-title">Hi, I'm <span>Yahaya</span></h1> 
+                        <!-- <p class="hero_role">Unmanned Systems developer &amp; Student · CSC106 Web Technologies</p>   -->
+                         <p>UAV Systems & Embedded Firmware | CSC106 Academic Hub</p>
+                        <p>
+                            <!-- Welcome to my academic portfolio. I design flight controllers, write
+                            firmwares, and build the software that keeps unmanned aircraft in the sky.
+                            This site brings my profile, skills, projects and academic planning
+                            together in one place. -->
+
+                            Welcome to my control center. 
+                            Built to showcase my profile and technical skills, 
+                            this site functions as an active dashboard for my university achievements and project logs. 
+                            Here, I manage my academic progress while documenting the hardware, 
+                            firmware, and companion software I build to keep autonomous systems airborne.
+                        </p>  
+                        
+                        <div class="hero__cta">
+                            <a class="btn btn--primary" href="projects.html">View projects</a>
+                            <a class="btn btn--ghost" href="contact.html">Get in touch</a>
+                        </div>
+                    </div>
+
+                    <figure class="hero__portrait">
+                        <img src="assets/images/yahaya_img_main1.svg"
+                            alt="Portrait of Yahaya" width="280" height="280" />
+                    </figure>
+                </div>
+
+                <dl class="telemetry">
+                    <div><dt>Focus</dt><dd>UAV Systems</dd></div>
+                    <div><dt>Stack</dt><dd>C/C++</dd></div>
+                    <div><dt>Computing</dt><dd>Computing skills</dd></div>
+                    <div><dt>Edge</dt><dd>Embedded Systems</dd></div>
+                    <div><dt>Cloud</dt><dd>Cloud Computing</dd></div>
+
+                    <!-- <div><dt>Course</dt><dd>CSC106</dd></div> -->
+                    <!-- <div><dt>Status</dt><dd>Building</dd></div> -->
+                </dl>
+            </div>
+        </section>
+
+        <!-- Brief biography -->
+        <section class="section wrap" aria-labelledby="bio-title">
+            <p class="eyebrow">Flight Log</p>
+            <h2 id="bio-title">A quick introduction</h2>
+            <div class="about-grid">
+                <p class="muted">
+                    I'm an embedded systems developer and UAV Technician, with hands-on experience across flight controllers, firmware and
+                    companion software. My work runs from bare-metal microcontrollers up to
+                    full autopilot stacks , and I care about the discipline that keeps
+                    safety-critical systems reliable.
+                </p>
+                <p class="muted">
+                    Alongside my work and projects, I create content on drones, robotics and AI, and
+                    I'm currently studying Computer science at <a href="https://www.miva.edu.ng">Miva Open University</a>. This portfolio is both a course
+                    project and a real home for the work I'm proud of — expect it to keep
+                    growing as new projects take flight.  
+                </p>
+            </div>
+        </section>
+        <!-- SECTION: Multimedia -->
+         <section class="section wrap" aria-labelledby="reel-title">
+            <p class="eyebrow">Multimedia</p>
+            <h2 id="reel-title">Project reel</h2>
+            <p class="muted" style="max-width:60ch;margin: bottom 1.5rem;">
+                A short showcase of Terminal guidance firmware built ontop of opensource flight stack.
+            </p>
+            <div class="media-frame">
+
+                <iframe width="1280" height="720" 
+                    src="https://www.youtube.com/embed/-lbyESybDEA?si=EI8m1kK2PjxD0m0E"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                    clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
+         </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+            <p class="muted">© <span data-year></span> Yahaya · Built with HTML, CSS &amp; JavaScript</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <meta name="description" content="My Projects." />
+
+    <!-- Google fonts: display, body and monospace type -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter
+    :wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="projects.html">
+            <span class="brand__mark" aria-hidden="true"></span>
+            <span class="brand_text">YAHAYA<span class="brand_dot">.</span></span> 
+        </a>
+
+        <!-- Hamburger button - only visible on mobile -->
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle 
+        navigation">
+        <span><span><span></span></span></span>
+        </button>
+
+        <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="planner.html">Planner</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+    <!-- SECTION: Page intro -->
+    <section class="page-head wrap">
+      <p class="eyebrow">Mission log</p>
+      <h1>Projects</h1>
+      <p class="lead">A selection of unmanned aircraft and software I've worked on.
+        Swap the images in <code>assets/images/</code> with photos of your own
+        builds and point the links at your repositories.</p>
+    </section>
+
+    <!-- =============================================================
+         SECTION: Project gallery
+         [CSS: Grid] the .card-grid lays the cards out responsively
+         [HTML: semantic] each project is an <article>
+         [HTML: image] each card has a screenshot/photo
+         [HTML: link] each card has "Case study" and "Repository" links
+         ============================================================= -->
+    <section class="section section--tight wrap">
+      <div class="card-grid">
+
+        <!-- ----- Project 1: fixed-wing UAV ----- -->
+        <article class="card">
+          <div class="card__media">
+            <!-- [HTML: image] replace with a photo of a fixed-wing drone -->
+            <img src="assets/images/project-fixedwing.svg"
+                 alt="Fixed-wing UAV project" width="480" height="300" />
+          </div>
+          <div class="card__body">
+            <span class="card__tag">Fixed-wing UAV</span>
+            <h3>Long-range survey aircraft</h3>
+            <p>
+              A fixed-wing platform tuned for endurance and stable cruise. Work spanned
+              airframe setup, control tuning and flight-log analysis to get clean,
+              predictable handling in the air.
+            </p>
+            <!-- [HTML: link] project links (real or simulated) -->
+            <div class="card__links">
+              <a class="btn btn--sm btn--ghost" href="#" rel="noopener">Case study</a>
+              <a class="btn btn--sm btn--ghost" href="#" rel="noopener">Repository</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ----- Project 2: multirotor ----- -->
+        <article class="card">
+          <div class="card__media">
+            <!-- [HTML: image] replace with a photo of a quad/multirotor -->
+            <img src="assets/images/project-multirotor.svg"
+                 alt="Multirotor drone project" width="480" height="300" />
+          </div>
+          <div class="card__body">
+            <span class="card__tag">Multirotor</span>
+            <h3>Quadcopter flight controller</h3>
+            <p>
+              A quadcopter build with a custom flight-control stack — sensor fusion,
+              PID stabilisation and RC handling — developed from the microcontroller up
+              and validated through simulation before flight.
+            </p>
+            <div class="card__links">
+              <a class="btn btn--sm btn--ghost" href="#" rel="noopener">Case study</a>
+              <a class="btn btn--sm btn--ghost" href="#" rel="noopener">Repository</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ----- software ----- -->
+        <article class="card">
+          <div class="card__media">
+            <!-- [HTML: image] replace with a screenshot of your software -->
+            <img src="assets/images/project-software.svg"
+                 alt="Ground control software project" width="480" height="300" />
+          </div>
+          <div class="card__body">
+            <span class="card__tag">Software</span>
+            <h3>Telemetry &amp; ground software</h3>
+            <p>
+              Companion and ground-station software for reading live telemetry,
+              visualising flight data and tuning parameters — turning raw logs into
+              plots that make an aircraft's behaviour easy to understand.
+            </p>
+            <div class="card__links">
+              <a class="btn btn--sm btn--ghost" href="#" rel="noopener">Case study</a>
+              <a class="btn btn--sm btn--ghost" href="#" rel="noopener">Repository</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- SECTION: Footer ([JS: dynamic year]) -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p class="mono">AzimuthConcepts · Ground Station</p>
+      <p class="muted">© <span data-year></span> Yahaya · Built with HTML, CSS &amp; JavaScript</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  
+</body>
+</html>
