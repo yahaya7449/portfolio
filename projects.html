@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>Projects</title>
     <meta name="description" content="My Projects." />
 
     <!-- Google fonts: display, body and monospace type -->
@@ -44,32 +44,28 @@
       <p class="eyebrow">Mission log</p>
       <h1>Projects</h1>
       <p class="lead">A selection of unmanned aircraft and software I've worked on.
-        Swap the images in <code>assets/images/</code> with photos of your own
-        builds and point the links at your repositories.</p>
+    </p>
     </section>
 
-    <!-- =============================================================
-         SECTION: Project gallery
-         [CSS: Grid] the .card-grid lays the cards out responsively
-         [HTML: semantic] each project is an <article>
-         [HTML: image] each card has a screenshot/photo
-         [HTML: link] each card has "Case study" and "Repository" links
-         ============================================================= -->
     <section class="section section--tight wrap">
       <div class="card-grid">
 
-        <!-- ----- Project 1: fixed-wing UAV ----- -->
+        <!-- Project 1: fixed-wing UAV -->
         <article class="card">
-          <div class="card__media">
-            <!-- [HTML: image] replace with a photo of a fixed-wing drone -->
+            <div class="card__slider">
+                <img src="assets/images/fixedwing1.jpeg" alt="Multirotor drone project - angle 1" width="480" height="300" />
+                <img src="assets/images/fixedwing_cad.jpeg" alt="Multirotor drone project - custom PCB" width="480" height="300" />
+                <!-- <img src="assets/images/quadcopter-3.jpeg" alt="Multirotor drone project - flight testing" width="480" height="300" /> -->
+            </div>
+          <!-- <div class="card__media">
             <img src="assets/images/project-fixedwing.svg"
                  alt="Fixed-wing UAV project" width="480" height="300" />
-          </div>
+          </div> -->
           <div class="card__body">
             <span class="card__tag">Fixed-wing UAV</span>
-            <h3>Long-range survey aircraft</h3>
+            <h3>Long-range fpv aircraft</h3>
             <p>
-              A fixed-wing platform tuned for endurance and stable cruise. Work spanned
+              A fixed-wing platform year 2021 tuned for endurance and stable cruise. Work spanned
               airframe setup, control tuning and flight-log analysis to get clean,
               predictable handling in the air.
             </p>
@@ -81,13 +77,13 @@
           </div>
         </article>
 
-        <!-- ----- Project 2: multirotor ----- -->
+        <!--  Project 2: multirotor  -->
         <article class="card">
           <div class="card__media">
-            <!-- [HTML: image] replace with a photo of a quad/multirotor -->
-            <img src="assets/images/project-multirotor.svg"
-                 alt="Multirotor drone project" width="480" height="300" />
-          </div>
+            <div class="card__slider">
+            <img src="assets/images/quadcopter.jpeg" alt="Multirotor drone project - angle 1" width="480" height="300" />
+            </div>
+        </div>
           <div class="card__body">
             <span class="card__tag">Multirotor</span>
             <h3>Quadcopter flight controller</h3>
@@ -103,24 +99,24 @@
           </div>
         </article>
 
-        <!-- ----- software ----- -->
+        <!-- Project 2:  software  -->
         <article class="card">
           <div class="card__media">
             <!-- [HTML: image] replace with a screenshot of your software -->
-            <img src="assets/images/project-software.svg"
-                 alt="Ground control software project" width="480" height="300" />
+            <img src="assets/images/af8.jpeg"
+                 alt="Opensource flight-control software for drones" width="480" height="300" />
           </div>
           <div class="card__body">
             <span class="card__tag">Software</span>
-            <h3>Telemetry &amp; ground software</h3>
+            <h3>flight-control &amp; software</h3>
             <p>
-              Companion and ground-station software for reading live telemetry,
-              visualising flight data and tuning parameters — turning raw logs into
-              plots that make an aircraft's behaviour easy to understand.
+              We are building a deterministic software to provide GNC(guidance, navigation and controls) for 
+              unmanned aeriel vehicles from fixed-wing, multirotor, rover, vtols etc.
+              This is still a work in progress.
             </p>
             <div class="card__links">
-              <a class="btn btn--sm btn--ghost" href="#" rel="noopener">Case study</a>
-              <a class="btn btn--sm btn--ghost" href="#" rel="noopener">Repository</a>
+              <a class="btn btn--sm btn--ghost" href="http://Afligh8.com" rel="noopener">Case study</a>
+              <a class="btn btn--sm btn--ghost" href="https://github.com/Afligh8" rel="noopener">Repository</a>
             </div>
           </div>
         </article>
